@@ -38,10 +38,10 @@ Issues: https://github.com/ytilotti/yoload/issues
         var self = this;
         self.$element = $(element);
 
-        self._init(options);
+        self.init(options);
     };
 
-    yoLoad.prototype._init = function (options) {
+    yoLoad.prototype.init = function (options) {
         var self = this,
             $element = self.$element;
 
