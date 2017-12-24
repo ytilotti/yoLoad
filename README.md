@@ -57,7 +57,7 @@ $('body').yoload('show');
 
 Method | Argument | Description
 ------ | -------- | -----------
-`init` | | Initializes yoload
+`init` | options : object | Initializes yoload
 `destroy` | | Destroy yoload
 `show` | | Show the loader
 `hide` | force : bool | Hide the loader
