@@ -1,0 +1,17 @@
+{
+  "name": "yoload",
+  "repo": "ytilotti/yoload",
+  "description": "the last carousel you'll ever need",
+  "version": "1.0.0-beta",
+  "keywords": ["jquery", "loader", "loading", "ajax"],
+  "dependencies": {
+    "component/jquery": "*"
+  },
+  "development": {},
+  "scripts": {
+    "yoload/yoload.js": "yoload.js"
+  },
+  "styles": {
+    "yoload/yoload.css": "yoload.css"
+  }
+}

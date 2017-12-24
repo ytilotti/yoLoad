@@ -1,0 +1,28 @@
+{
+  "name": "yoload",
+  "main": [
+    "yoload/yoload.js",
+    "yoload/yoload.css"
+  ],
+  "homepage": "https://github.com/ytilotti/yoload",
+  "authors": [
+    "Yohann Tilotti <dev@yohanntilotti.com>"
+  ],
+  "description": "the last carousel you'll ever need",
+  "keywords": [
+    "jquery",
+    "loader",
+    "loading",
+    "ajax"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "package.json"
+  ],
+  "dependencies": {
+    "jquery": ">=1.8.0"
+  }
+}

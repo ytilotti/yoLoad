@@ -1,0 +1,33 @@
+{
+  "name": "yoload",
+  "title": "yoload",
+  "description": "A jQuery flexible loading",
+  "keywords": [
+    "jquery",
+    "loader",
+    "loading",
+    "ajax"
+  ],
+  "version": "1.0.0-beta",
+  "author": {
+    "name": "Yohann Tilotti",
+    "url": "http://yohanntilotti.com"
+  },
+  "maintainers": [{
+    "name": "Yohann Tilotti",
+    "email": "dev@yohanntilotti.com",
+    "url": "http://yohanntilotti.com"
+  }],
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/ytilotti/yoload/blob/master/LICENSE"
+  }],
+  "demo": "https://github.com/ytilotti/yoload/",
+  "bugs": "https://github.com/ytilotti/yoload/issues",
+  "homepage": "https://github.com/ytilotti/yoload/",
+  "docs": "https://github.com/ytilotti/yoload/",
+  "download": "https://github.com/ytilotti/yoload/archive/master.zip",
+  "dependencies": {
+    "jquery": ">=1.8.0"
+  }
+}
