@@ -115,7 +115,7 @@ Issues: https://github.com/ytilotti/yoload/issues
                 opt;
 
             if (!instance) {
-                opt = $.extend(true, {}, $.fn.yoload.defaults, options, $self.data());
+                opt = $.extend(true, {}, $.fn.yoload.defaults, options);
                 instance = new yoLoad(this, opt);
                 $self.data('yoload', instance);
             }
@@ -140,6 +140,6 @@ Issues: https://github.com/ytilotti/yoload/issues
 
     $.fn.yoload.defaults = {
         fade: 0,
-        template: '<div class="yoload"></div>'
+        template: '<span class="yoload"></span>'
     };
 }));
