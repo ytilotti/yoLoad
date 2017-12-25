@@ -54,6 +54,8 @@ Issues: https://github.com/ytilotti/yoload/issues
         };
 
         self.$wrapper = $('<div/>').addClass('yoload-wrapper').html(options.template).hide().appendTo($element);
+
+        return $element.trigger('yoload.counter', [self.counter]);
     };
 
     yoLoad.prototype.show = function () {
@@ -67,7 +69,7 @@ Issues: https://github.com/ytilotti/yoload/issues
         }
         self.counter++;
 
-        return $element;
+        return $element.trigger('yoload.counter', [self.counter]);
     };
 
     yoLoad.prototype.hide = function (force) {
@@ -91,7 +93,7 @@ Issues: https://github.com/ytilotti/yoload/issues
             }
         }
 
-        return $element;
+        return $element.trigger('yoload.counter', [self.counter]);
     };
 
     yoLoad.prototype.destroy = function () {
