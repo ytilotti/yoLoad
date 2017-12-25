@@ -39,6 +39,7 @@ $('body').on('yoload.hide', function(event){
 });
 ```
 
+
 ## Get the plugin
 
 ### Package Managers
@@ -51,13 +52,14 @@ bower install --save yoload
 npm install yoload
 ```
 
+
 ## Settings
 
 ### Options
 
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
-fade | integer | 0 | Display the matched elements by fading them to opaque.
+fade | integer or string | 0 | Display the matched elements by fading them to opaque. Use 'slow', 'fast' or a number of milliseconds.
 template | string (html) | `<span class="yoload"></span>` | Customize the HTML loader.
 
 #### Exemple
@@ -71,11 +73,12 @@ $('body').yoload({
 });
 ```
 
-Or like this for all calling
+Or like this for all calling:
 
 ```javascript
-$.fn.yoload.defaults.template = '<span class="yoload"><span class="fa fa-spinner fa-spin"></span>';
+$.fn.yoload.defaults.fade = 500;
 ```
+
 
 ### Events
 
@@ -91,12 +94,14 @@ yoload.counter | event, counter | When the counter is modify on "multiple" loade
 $('body').on('yoload.hide', function(event){
   console.log('The loader is hiding');
 });
-
+```
+```javascript
 // On counter change
 $('body').on('yoload.counter', function(event, counter){
   console.log('Counter: '+counter);
 });
 ```
+
 
 ### Methods
 
@@ -116,13 +121,16 @@ Methods are called on yoload instances:
 $('body').yoload('show');
 ``` 
 
+
 ### Browser support
 
 Yoload works on IE8+ in addition to other modern browsers such as Chrome, Firefox, and Safari.
 
+
 ### Dependencies
 
 jQuery 1.8
+
 
 ### License
 
