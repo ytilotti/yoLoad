@@ -52,17 +52,14 @@ bower install --save yoload
 npm install yoload
 ```
 
-
-## Settings
-
-### Options
+## Options
 
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
 fade | integer or string | 0 | Display the matched elements by fading them to opaque. Use 'slow', 'fast' or a number of milliseconds.
 template | string (html) | `<span class="yoload"></span>` | Customize the HTML loader.
 
-#### Exemple
+### Exemple
 
 You can use it like so:
 
@@ -79,15 +76,14 @@ Or like this for all calling:
 $.fn.yoload.defaults.fade = 500;
 ```
 
-
-### Events
+## Events
 
 Event | Params | Description
 ------ | -------- | -----------
 yoload.hide | event | After loader completely hiding
 yoload.counter | event, counter | When the counter is modify on "multiple" loader on element
 
-#### Exemple
+### Exemple
 
 ```javascript
 // On hiding loader
@@ -102,8 +98,7 @@ $('body').on('yoload.counter', function(event, counter){
 });
 ```
 
-
-### Methods
+## Methods
 
 Method | Argument | Description
 ------ | -------- | -----------
@@ -112,7 +107,7 @@ Method | Argument | Description
 `show` | | Show the loader
 `hide` | force : bool | Hide the loader. Possibility to force it with the parameter.
 
-#### Exemple
+### Exemple
 
 Methods are called on yoload instances:
 
@@ -121,6 +116,7 @@ Methods are called on yoload instances:
 $('body').yoload('show');
 ``` 
 
+## Details
 
 ### Browser support
 
