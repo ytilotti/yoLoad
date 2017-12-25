@@ -1,5 +1,11 @@
 # yoload
-A flexible loading jQuery plugin
+A flexible loader jQuery plugin.
+
+#### Use cases
+
+* Enhancing the waiting of user with a loader!
+* Create a loader on multiple ajax calling to waiting the end of calls.
+* Personalize your loader.
 
 #### Package Managers
 
@@ -9,12 +15,6 @@ bower install --save yoload
 
 # NPM
 npm install yoload
-```
-
-### Exemple
-
-```js
-$('body').yoload();
 ```
 
 ### Settings
@@ -44,9 +44,10 @@ $('body').on('yoload.hide', function(event){
 
 Event | Params | Description
 ------ | -------- | -----------
-yoload.hide | event | After loader hiding
+yoload.hide | event | After loader completely hiding
+yoload.counter | event, counter | When the counter is modify on "multiple" loader on element
 
-#### Methods
+### Methods
 
 Methods are called on yoload instances:
 
@@ -61,26 +62,16 @@ Method | Argument | Description
 `destroy` | | Destroy yoload
 `show` | | Show the loader
 `hide` | force : bool | Hide the loader
-
-#### Example
-
-Initialize with:
-
-```javascript
-$(body).yoload({
-  fade: 500
-});
- ```
  
-#### Browser support
+### Browser support
 
 Yoload works on IE8+ in addition to other modern browsers such as Chrome, Firefox, and Safari.
 
-#### Dependencies
+### Dependencies
 
 jQuery 1.8
 
-#### License
+### License
 
 Copyright (c) 2018 Yohann Tilotti
 
