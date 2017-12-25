@@ -1,4 +1,4 @@
-# yoload
+# yoLoad
 A flexible loader jQuery plugin.
 
 ### Use cases
