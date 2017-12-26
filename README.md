@@ -34,22 +34,9 @@ $.ajax({
 ```
 ```javascript
 // Do something at the end of ajax calls
-$('body').on('yoload.hide', function(event){
+$('body').on('yoload.hide', function(event) {
   alert('Welcome in the new panel order');
 });
-```
-
-
-## Get the plugin
-
-### Package Managers
-
-```sh
-# Bower
-bower install --save yoload
-
-# NPM
-npm install yoload
 ```
 
 ## Options
