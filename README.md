@@ -96,7 +96,7 @@ Method | Argument | Description
 
 ### Exemple
 
-Methods are called on yoload instances:
+Methods are called on yoLoad instances:
 
 ```javascript
 // Show the loader
@@ -107,7 +107,7 @@ $('body').yoload('show');
 
 ### Browser support
 
-Yoload works on IE8+ in addition to other modern browsers such as Chrome, Firefox, and Safari.
+yoLoad works on IE9+ in addition to other modern browsers such as Chrome, Firefox, and Safari.
 
 
 ### Dependencies
