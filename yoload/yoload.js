@@ -6,7 +6,7 @@
 |   |_|_____|___|___|/ \__\___| |_|  |
 |____________________________________|
 
-Version: 1.0.0-beta
+Version: 1.0.1-beta
 Author: Yohann Tilotti
 Website: http://yohanntilotti.com
 Repo: https://github.com/ytilotti/yoload
@@ -100,6 +100,7 @@ Issues: https://github.com/ytilotti/yoload/issues
         var self = this,
             $element = self.$element;
 
+        $element.css('overflow', self.cache.css.overflow);
         $element.find('.yoload-wrapper').remove();
         $element.removeData('yoload');
 
