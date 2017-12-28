@@ -64,6 +64,7 @@ Issues: https://github.com/ytilotti/yoload/issues
             options = self.options;
 
         if (!self.counter) {
+            self.$wrapper.css('top', $element.scrollTop()+'px').css('left', $element.scrollLeft()+'px');
             $element.css('overflow', 'hidden');
             self.$wrapper.fadeIn(options.fade);
         }
